@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:context="http://www.springframework/schema/context"
-        xmlns:mvc="http://www.springframework.org/schema/mvc"
-        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
-        
-<bean id="triangle" class="com.vswamy.spring.example1.Triangle">
-	<constructor-arg index="0" type="com.vswamy.spring.example1.Point" ref="pointA"/>
-	<constructor-arg index="1" type="com.vswamy.spring.example1.Point" ref="pointB"/>
-	<constructor-arg index="2" type="com.vswamy.spring.example1.Point" ref="pointC"/>
-</bean>
 
-<bean id="pointA" class="com.vswamy.spring.example1.Point">
-	<constructor-arg value="0"/>
-	<constructor-arg value="0"/>
-</bean>
+	<bean id="triangle" class="com.vswamy.spring.example1.Triangle">
+		<constructor-arg index="0"
+			type="com.vswamy.spring.example1.Point" ref="pointA" />
+		<constructor-arg index="1"
+			type="com.vswamy.spring.example1.Point" ref="pointB" />
+		<constructor-arg index="2"
+			type="com.vswamy.spring.example1.Point" ref="pointC" />
+	</bean>
 
-<bean id="pointB" class="com.vswamy.spring.example1.Point">
-	<constructor-arg value="-20"/>
-	<constructor-arg value="0"/>
-</bean>
+	<bean id="pointA" class="com.vswamy.spring.example1.Point">
+		<constructor-arg value="0" />
+		<constructor-arg value="0" />
+	</bean>
+
+	<bean id="pointB" class="com.vswamy.spring.example1.Point">
+		<constructor-arg value="-20" />
+		<constructor-arg value="0" />
+	</bean>
 
 
-<bean id="pointC" class="com.vswamy.spring.example1.Point">
-	<constructor-arg value="0"/>
-	<constructor-arg value="20"/>
-</bean>
-    
- </beans>
+	<bean id="pointC" class="com.vswamy.spring.example1.Point">
+		<constructor-arg value="0" />
+		<constructor-arg value="20" />
+	</bean>
+
+</beans>
