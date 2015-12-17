@@ -6,7 +6,25 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 <bean id="triangle" class="com.vswamy.spring.Triangle">
-	<constructor-arg value="Equilateral"/>
+	<constructor-arg index="0" type="com.vswamy.spring.Point" ref="pointA"/>
+	<constructor-arg index="1" type="com.vswamy.spring.Point" ref="pointB"/>
+	<constructor-arg index="2" type="com.vswamy.spring.Point" ref="pointC"/>
+</bean>
+
+<bean id="pointA" class="com.vswamy.spring.Point">
+	<constructor-arg value="0"/>
+	<constructor-arg value="0"/>
+</bean>
+
+<bean id="pointB" class="com.vswamy.spring.Point">
+	<constructor-arg value="-20"/>
+	<constructor-arg value="0"/>
+</bean>
+
+
+<bean id="pointC" class="com.vswamy.spring.Point">
+	<constructor-arg value="0"/>
+	<constructor-arg value="20"/>
 </bean>
     
  </beans>

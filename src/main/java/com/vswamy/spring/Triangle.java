@@ -2,25 +2,51 @@ package com.vswamy.spring;
 
 public class Triangle
 {
-    private String type;
+    private Point A;
+    private Point B;
+    private Point C;
     
-    Triangle(String type)
+    Triangle(Point A, Point B, Point C)
     {
-        this.type = type;
+        this.A = A;
+        this.B = B;
+        this.C = C;
     }
     
-    public String getType()
+    public Point getA()
     {
-        return type;
+        return A;
+    }
+ 
+    public void setA(Point a)
+    {
+        A = a;
     }
 
-    public void setType(String type)
+    public Point getB()
     {
-        this.type = type;
+        return B;
+    }
+
+    public void setB(Point b)
+    {
+        B = b;
+    }
+
+    public Point getC()
+    {
+        return C;
+    }
+
+    public void setC(Point c)
+    {
+        C = c;
     }
 
     public void draw()
     {
-        System.out.println("Triangle draw method! = " + this.getType());
+        System.out.println("Point A = " + A.toString());
+        System.out.println("Point B = " + B.toString());
+        System.out.println("Point C = " + C.toString());
     }
 }
