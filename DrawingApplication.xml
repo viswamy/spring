@@ -11,24 +11,24 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         
-<bean id="triangle" class="com.vswamy.spring.Triangle">
-	<constructor-arg index="0" type="com.vswamy.spring.Point" ref="pointA"/>
-	<constructor-arg index="1" type="com.vswamy.spring.Point" ref="pointB"/>
-	<constructor-arg index="2" type="com.vswamy.spring.Point" ref="pointC"/>
+<bean id="triangle" class="com.vswamy.spring.example1.Triangle">
+	<constructor-arg index="0" type="com.vswamy.spring.example1.Point" ref="pointA"/>
+	<constructor-arg index="1" type="com.vswamy.spring.example1.Point" ref="pointB"/>
+	<constructor-arg index="2" type="com.vswamy.spring.example1.Point" ref="pointC"/>
 </bean>
 
-<bean id="pointA" class="com.vswamy.spring.Point">
+<bean id="pointA" class="com.vswamy.spring.example1.Point">
 	<constructor-arg value="0"/>
 	<constructor-arg value="0"/>
 </bean>
 
-<bean id="pointB" class="com.vswamy.spring.Point">
+<bean id="pointB" class="com.vswamy.spring.example1.Point">
 	<constructor-arg value="-20"/>
 	<constructor-arg value="0"/>
 </bean>
 
 
-<bean id="pointC" class="com.vswamy.spring.Point">
+<bean id="pointC" class="com.vswamy.spring.example1.Point">
 	<constructor-arg value="0"/>
 	<constructor-arg value="20"/>
 </bean>

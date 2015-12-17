@@ -5,6 +5,7 @@
 
 #folders to be excluded
 .target/
+*.lst
 
 # Package Files #
 *.jar

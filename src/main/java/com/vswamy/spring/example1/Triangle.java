@@ -1,4 +1,4 @@
-package com.vswamy.spring;
+package com.vswamy.spring.example1;
 
 public class Triangle
 {
