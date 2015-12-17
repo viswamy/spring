@@ -18,10 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <manifestEntries>
-                    <Main-Class>com.vswamy.spring.DrawingApplication</Main-Class>
-                    <Build-Number>1</Build-Number>
-                  </manifestEntries>
+                  <mainClass>com.vswamy.spring.DrawingApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>
