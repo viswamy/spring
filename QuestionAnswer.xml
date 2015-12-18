@@ -12,9 +12,9 @@
 
 
 	<bean id="q" class="com.vswamy.spring.example2.Question">
-		<constructor-arg value="111"></constructor-arg>
-		<constructor-arg value="What is java?"></constructor-arg>
-		<constructor-arg>
+		<constructor-arg index="0" type="int" value="111"></constructor-arg>
+		<constructor-arg index="1" type="java.lang.String" value="What is java?"></constructor-arg>
+		<constructor-arg index="2" type="java.util.List">
 			<list>
 				<value>Java is a programming language</value>
 				<value>Java is a Platform</value>
@@ -22,7 +22,4 @@
 			</list>
 		</constructor-arg>
 	</bean>
-
-
-
 </beans>
